@@ -1,0 +1,36 @@
+/*!  Pillar v0.1  -  Grid system (3 columns)
+Copyright ⓒ 2015 Konfirm. All rights reserved
+Licensed under the MIT License.
+*/
+
+/*
+	Inspired by the awesome Pure CSS framework (http://purecss.io)
+*/
+
+/*  The default 'column' width and display mode  */
+
+[class *= "grid"] > * {
+  display: inline-block;
+  *display: inline;
+  /*  IE < 8: fake inline-block  */
+  zoom: 1;
+  width: 33.33333333333333%;
+}
+
+/*  The 'row' will be using the flex display mode  */
+
+[class *= "grid"] {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+}
+
+.grid--2-1 > :nth-child(2n+1),
+.grid--1-2 > :nth-child(2n+2) {
+  width: 66.66666666666666%;
+}
