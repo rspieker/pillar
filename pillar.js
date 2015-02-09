@@ -10,7 +10,7 @@ function PillarBuilder()
 			separator: '-',
 
 			myth: true,
-			minify: false
+			minify: true
 		},
 		output = process.stdout;
 
@@ -192,13 +192,12 @@ if (process.argv[3])
 if (process.argv[4])
 	builder.separator = process.argv[4];
 
-if (process.argv[5] === 'false')
+if (process.env.MYTH === 'off')
 {
 	builder.myth   = false;
 	builder.minify = false;
 }
-
-if (process.argv[6] === 'false')
+else if (process.env.MIN === 'off')
 {
 	builder.minify = false;
 }
