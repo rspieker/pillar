@@ -1,0 +1,32 @@
+{
+  "name": "Pillar",
+  "version": "1.0.0",
+  "description": "CSS Grids simplified",
+  "main": "pillar.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://rspieker@github.com/rspieker/pillar.git"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "pillar",
+    "columns"
+  ],
+  "author": "Rogier Spieker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rspieker/pillar/issues"
+  },
+  "homepage": "https://github.com/rspieker/pillar",
+  "devDependencies": {
+    "cssmin": "^0.4.2",
+    "myth": "^1.3.0"
+  }
+}
