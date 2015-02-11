@@ -72,7 +72,7 @@ function PillarBuilder()
 	function rules(tokens, columns)
 	{
 		var result = {},
-			divider = settings.separator + settings.separator,
+			divider = '-' + settings.separator,
 			rx, i, j;
 
 		for (i = 0; i < columns; ++i)
@@ -186,10 +186,10 @@ function PillarBuilder()
 
 var builder = new PillarBuilder();
 
-if (process.argv[3])
+if (process.argv.length > 3)
 	builder.prefix = process.argv[3];
 
-if (process.argv[4])
+if (process.argv.length > 4)
 	builder.separator = process.argv[4];
 
 if (process.env.MYTH === 'off')
