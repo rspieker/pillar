@@ -72,7 +72,7 @@ function PillarBuilder()
 	function rules(tokens, columns)
 	{
 		var result = {},
-			divider = '-' + settings.separator,
+			divider = (settings.separator || '-') + settings.separator,
 			rx, i, j;
 
 		for (i = 0; i < columns; ++i)
