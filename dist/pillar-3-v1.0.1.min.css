@@ -1,0 +1,4 @@
+/*!  Pillar v1.0.1  -  CSS Grids simplified (3 pillars/columns)
+Copyright ⓒ 2015 Rogier Spieker (Konfirm). All rights reserved.
+Licensed under the MIT License.
+*/[class *= "pllr3"]>*,[class *= "pllr"]>*{display:inline-block;*display:inline;zoom:1;width:33.33333333333333%}[class *= "pllr"]{display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-flow:row wrap;-ms-flex-flow:row wrap;flex-flow:row wrap;text-rendering:optimizespeed}.pllr--2-1>:nth-child(2n+1),.pllr--1-2>:nth-child(2n+2){width:66.66666666666666%}
