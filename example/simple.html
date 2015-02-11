@@ -2,18 +2,18 @@
 
 <html>
 	<head>
-		<link rel=stylesheet href=../dist/6-pillar-0.1.min.css>
+		<link rel=stylesheet href=../dist/pillar-6-v1.0.0.min.css>
 		<style>
-			[class *= "grid"] > * {
+			[class *= "pllr"] > * {
 				line-height: 2em;
-				box-shadow: 0 0 1px 1px #777;
+				box-shadow: 0 0 1px 0 #777;
 			}
 		</style>
 	</head>
 	<body>
 
 		<h3>A couple of simple variations</h3>
-		<div class=grid--1-1-1-1-1-1>
+		<div class=pllr--1-1-1-1-1-1>
 			<div>1</div>
 			<div>1</div>
 			<div>1</div>
@@ -24,7 +24,7 @@
 
 		<br>
 
-		<div class=grid--3-1-2>
+		<div class=pllr--3-1-2>
 			<div>three columns</div>
 			<div>one column</div>
 			<div>two columns</div>
@@ -32,7 +32,7 @@
 
 		<br>
 
-		<div class=grid--3-2-1>
+		<div class=pllr--3-2-1>
 			<div>three columns</div>
 			<div>two columns</div>
 			<div>one column</div>
@@ -40,7 +40,7 @@
 
 		<br>
 
-		<div class=grid--1-1-2-2>
+		<div class=pllr--1-1-2-2>
 			<div>one column</div>
 			<div>one column</div>
 			<div>two columns</div>
@@ -50,7 +50,7 @@
 		<br>
 
 		<h3>Not just the given amount of columns, but endlessly</h3>
-		<div class=grid--3-2-1>
+		<div class=pllr--3-2-1>
 			<div>three columns</div>
 			<div>two columns</div>
 			<div>one column</div>
@@ -71,8 +71,8 @@
 		<br>
 
 		<h3>And nesting seems pretty darn easy now</h3>
-		<div class=grid--3-2-1>
-			<div class=grid--3-1-2>
+		<div class=pllr--3-2-1>
+			<div class=pllr--3-1-2>
 				<div>three columns</div>
 				<div>one column</div>
 				<div>two columns</div>
@@ -83,7 +83,7 @@
 			<!--  and the columns go on and on and on...  -->
 
 			<div>three columns</div>
-			<div class=grid--2-2-2>
+			<div class=pllr--2-2-2>
 				<div>two columns</div>
 				<div>two columns</div>
 				<div>two columns</div>
@@ -92,22 +92,23 @@
 
 			<!--  and the columns go on and on and on...  -->
 
-			<div class=grid--3-2-1>
+			<div class=pllr--3-2-1>
 				<div>three columns</div>
 				<div>two columns</div>
 				<div>one column</div>
 			</div>
 			<div>two columns</div>
-			<div class=grid--3-3>
+			<div class=pllr--3-3>
 				<div>three columns</div>
 				<div>three columns</div>
 			</div>
 		</div>
 
 		<h3>So, how about that 24-column grid?</h3>
-		<div class=grid--3-3>
-			<div class=grid--3-3>
-				<div class=grid--1-1-1-1-1-1>
+		<em>One can easily nest Pillar grids</em>
+		<div class=pllr--3-3>
+			<div class=pllr--3-3>
+				<div class=pllr--1-1-1-1-1-1>
 					<div>1</div>
 					<div>1</div>
 					<div>1</div>
@@ -115,7 +116,7 @@
 					<div>1</div>
 					<div>1</div>
 				</div>
-				<div class=grid--1-1-1-1-1-1>
+				<div class=pllr--1-1-1-1-1-1>
 					<div>1</div>
 					<div>1</div>
 					<div>1</div>
@@ -124,8 +125,8 @@
 					<div>1</div>
 				</div>
 			</div>
-			<div class=grid--3-3>
-				<div class=grid--1-1-1-1-1-1>
+			<div class=pllr--3-3>
+				<div class=pllr--1-1-1-1-1-1>
 					<div>1</div>
 					<div>1</div>
 					<div>1</div>
@@ -133,7 +134,7 @@
 					<div>1</div>
 					<div>1</div>
 				</div>
-				<div class=grid--1-1-1-1-1-1>
+				<div class=pllr--1-1-1-1-1-1>
 					<div>1</div>
 					<div>1</div>
 					<div>1</div>
@@ -143,6 +144,5 @@
 				</div>
 			</div>
 		</div>
-
 	</body>
 </html>
